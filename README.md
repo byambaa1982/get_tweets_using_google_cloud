@@ -69,6 +69,22 @@ This API can be deployed on any platform that supports Flask applications. Some 
 - Google Cloud Platform (App Engine)
 - Amazon Web Services (Lambda, EC2)
 
+Appscript code for a Google Sheets included in here is integrated with a Google Cloud Function. The code has several functions that allow you to interact with the Google Cloud Function and retrieve data from it.
 
+clearSheet(): This function clears the contents of a sheet with a specific name. It takes the name of the sheet, the column number, and the starting row as input.
+
+seatch_word(): This function retrieves tweets based on a keyword. It takes the keyword from a cell in a sheet and sends it to the Google Cloud Function in a POST request. The response from the function is returned as a JSON object.
+
+get_followers_data(): This function retrieves the followers of a Twitter user. It takes the username and a keyword as input and sends it to the Google Cloud Function in a POST request. The response from the function is returned as a JSON object.
+
+get_tweets_data(): This function retrieves tweets from a list of Twitter users. It takes the list of usernames and a keyword as input and sends it to the Google Cloud Function in a POST request. The response from the function is returned as a JSON object.
+
+Print(), Print2(), and Print3(): These functions take the response from the functions seatch_word(), get_followers_data(), and get_tweets_data(), respectively, and print the data in a specific sheet in the Google Sheet.
+
+deleteBlankRows(): This function deletes all the empty rows in all the sheets of the Google Sheet.
+
+onOpen(): This function creates a custom menu in the Google Sheet with options to run the functions Print(), Print2(), Print3(), clearSheet(), and removeEmptyRows().
+
+Note: The URLs in the code are specific to the Google Cloud Function and need to be updated if the function's URL changes.
 ### Conclusion
 This API provides a simple and straightforward way to retrieve tweets based on a keyword and location. With just a few modifications, it can be customized to your specific requirements.
