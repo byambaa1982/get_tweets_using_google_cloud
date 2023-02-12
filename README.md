@@ -42,7 +42,7 @@ bash
 Copy code
 GET /get_tweets?key_word=example
 Response
-python
+```python
 Copy code
 HTTP 200 OK
 Content-Type: application/json
@@ -60,11 +60,15 @@ Content-Type: application/json
     ],
     ...
 ]
-Deployment
+```
+
+### Deployment
 This API can be deployed on any platform that supports Flask applications. Some popular options are:
 
-Heroku
-Google Cloud Platform (App Engine)
-Amazon Web Services (Lambda, EC2)
-Conclusion
+- Heroku
+- Google Cloud Platform (App Engine)
+- Amazon Web Services (Lambda, EC2)
+
+
+### Conclusion
 This API provides a simple and straightforward way to retrieve tweets based on a keyword and location. With just a few modifications, it can be customized to your specific requirements.
