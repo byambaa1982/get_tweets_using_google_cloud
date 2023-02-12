@@ -69,6 +69,8 @@ This API can be deployed on any platform that supports Flask applications. Some 
 - Google Cloud Platform (App Engine)
 - Amazon Web Services (Lambda, EC2)
 
+### Appscript
+
 Appscript code for a Google Sheets included in here is integrated with a Google Cloud Function. The code has several functions that allow you to interact with the Google Cloud Function and retrieve data from it.
 
 clearSheet(): This function clears the contents of a sheet with a specific name. It takes the name of the sheet, the column number, and the starting row as input.
